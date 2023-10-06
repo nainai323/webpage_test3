@@ -6,6 +6,27 @@
 body{
     font-family: "Roboto", "Zen Kaku Gothic Antique", sans-serif;
     font-size: 16px;
+    /* background-color: rgb(218, 160, 216); */
+    /* background: linear-gradient(0deg, rgb(218, 160, 216), rgb(231, 87, 226)); */
+    background-image: url(../img/IMG_8187_2.jpg);
+   
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: top left;
+     
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+     
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+     
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+}
+
+@media only screen and (min-width: 767px) {
+    body {
+      /* background-color: #EEE; */
+    }
 }
 
 .top h1{ 
@@ -37,9 +58,12 @@ body h3{
 
 body h4{
     text-align: center;
-    font-size: 30px;
+    font-size: 24px;
     /*margin-top: 16px;*/
     margin-bottom: 16px;
+    display: flex;
+    /* justify-content: center;  */
+    border-bottom: 1px solid #333;
 }
 
 body p{
@@ -56,6 +80,27 @@ a{
 ul,li {
     list-style: none;
 }
+
+/* backimg-------------------------------- */
+
+/* .backimg{
+    /* background-size: contain; 
+    /* height: 100%; 
+    position: fixed;
+    z-index: -1;
+}
+
+.backimg img{
+    display: block;
+    width: 100vw;
+    height: auto;
+    
+
+} */
+
+/* <div class="backimg">
+        <img src="./img/IMG_8187_2.jpg" alt="">
+    </div> */
 
 /*header------------------------------------------*/
 .header{
@@ -142,9 +187,10 @@ ul,li {
     width: 100%;
     height: 490px;
     margin: 0 auto;/*二つ目の引数は左右のmargin(他のブロックからの距離:ここでは壁)autoにすることでwidthが効く*/
-    background-image:url(../img/IMG_8187.jpg);
-    background-size: contain;
+    /* background-image:url(../img/IMG_8187.jpg);
+    background-size: contain; */
     /* rgb(235, 227, 175);*/
+    padding: 5%;
     font-weight: 900;
     color: #333;  
     margin-top: 50px;
@@ -169,7 +215,7 @@ ul,li {
     display: flex;
     justify-content: center;
     align-items: top;
-    margin-right: 5vw;
+    /* margin-right: 2vw; */
 }
 
 .logo img{
@@ -184,19 +230,24 @@ ul,li {
 .content {
     width: 100%;
     margin: 0 auto;
-    background: #EEE;
+    /* background: #EEE; */
     padding: 5%;
     line-height: 2em;
 }
 
 .content .top_message{
-    text-align: center;
-    padding: 15% 0;
+    padding: min(10%,70px);
+    box-shadow: 4px 4px 12px 4px;
+
 }
 
 .content div{
-    padding: 10% 0;
+    padding: min(10%,70px);
     border-bottom: 1px solid #333;
+    background-color: rgba(245, 245, 245,0.9);
+    margin: 50px 0;
+    border-radius: 20px;
+    box-shadow: 4px 4px 12px 4px;
 }
 
 .content img{
