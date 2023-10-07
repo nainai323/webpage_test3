@@ -11,6 +11,7 @@ body{
     font-family: "Roboto", "Zen Kaku Gothic Antique", sans-serif;
     font-size: 16px;
     /* background: transparent; */
+    color: #333;
 }
 
 .top::before {
@@ -44,7 +45,7 @@ body{
 
 .top .date h2{
     -webkit-text-stroke: 0px #EEE;
-    color:rgba(240, 240, 240, 1); 
+    color:rgba(245, 245, 245, 1); 
     font-size: min(30px, 6vw);
     display: block;
     padding: 5px;
@@ -56,7 +57,6 @@ body h3{
 }
 
 body h4{
-    text-align: center;
     font-size: 24px;
     /*margin-top: 16px;*/
     margin-bottom: 16px;
@@ -79,26 +79,6 @@ a{
 ul,li {
     list-style: none;
 }
-
-/* backimg-------------------------------- */
-/* 
-.backimg{
-    background-size: contain; 
-    height: 100%; 
-    position: fixed;
-    z-index: -999;
-} 
-
-.backimg img{
-    display: block;
-    height: 100vh;
-    height: auto;
-    
-} */
-
-/* <div class="backimg">
-        <img src="./img/IMG_8187_2.jpg" alt="">
-    </div> */
 
 /*header------------------------------------------*/
 .header{
@@ -126,6 +106,7 @@ ul,li {
   /* ヘッダーのロゴ部分 */
 .header__title {
     width: 70px;
+    z-index: 99999;
 }
   
 .header__title img {
@@ -133,21 +114,21 @@ ul,li {
     width: 100%;
     height: 100%;
 }
+
 /* ヘッダーのナビ部分 */
 .header__nav {
     position: absolute;
     right: 0;
-    left: 0;
     top: 0;
     width: 100%;
     height: 100vh;
     transform: translateX(100%); 
-    background-color: #fff; /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
+    background-color: rgba(245, 245, 245, .9); /*ハンバーガーメニュークリック時のナビゲーションメニュー背景色*/
     transition: ease .4s; /*ハンバーガーメニュークリック時のナビゲーションメニュー出現を遅延*/
 }
 /* ハンバーガーメニュー */
 .header__hamburger {
-    width: 48px;
+    width: 30px;
     height: 100%;
 }
 
@@ -179,6 +160,63 @@ ul,li {
 .hamburger span:nth-child(3) {
     top: 0;
 }
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -9px;
+  transform: rotate(-45deg);
+}
+
+/* navigation内の整え */
+.nav-items {
+    padding-top:calc(50px + 20vh);
+    padding-bottom: 20vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* ナビのリンク */
+.nav-items .nav__items{
+    width: 220px;
+    margin: auto;
+}
+
+.nav-items .nav__items .nav-items__item{
+    text-align: center;
+    border-left: 4px solid #333;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.nav-items a {
+    font-size: 24px;
+    color: #333;
+}
+
+
+.nav-items:last-child a {
+    margin-bottom: 0;   
+}
+
+.copyright{
+    display: block;
+    text-align: right;
+    padding: 5%;
+}
+
 
 /*top---------------------------------------------*/
 .top{
@@ -262,12 +300,12 @@ ul,li {
     width: 100%;
     background-color:rgb(192, 6, 229);;
     */
-    background-color: #EEE;
+    /* background-color: #EEE;
     width: 100%;
     height: 10px;
     position: fixed;
     bottom: 0;
-    text-align: center;
+    text-align: center; */
 }
 /*© 2023 収穫祭実行委員PCパート*/
 

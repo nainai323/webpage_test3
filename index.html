@@ -10,19 +10,30 @@
     <link rel="stylesheet" href="CSS/reset.css">
 </head>
 
-<body>
+<body id="#tp">
     <header class="header">
         <div class="header__inner">
             <div class="header__title header-title">
-            <a href="#">
+            <a href="#top">
                 <img src="./img/logo.png" alt="ロゴ画像">
             </a>
             </div>
     
-            <nav class="header__nav nav">
+            <nav class="header__nav nav" id="js-nav">
+                <div class="nav-items">
+                    <ul class="nav__items">
+                            <li class="nav-items__item"><a href="./sub/news.html"><b>お知らせ</b></a></li>
+                            <li class="nav-items__item"><a href="index.html#fm"><b>フロアマップ</b></a></li>
+                            <li class="nav-items__item"><a href="./sub/groups.html"><b>展示団体</b></a></li>
+                            <li class="nav-items__item"><a href="./sub/stage.html"><b>ステージ演目</b></a></li>
+                    </ul>
+                    <div class="copyright">
+                        © 2023 収穫祭実行委員PCパート
+                    </div>
+                </div>
             </nav>
-    
-            <button class="header__hamburger hamburger">
+            
+            <button class="header__hamburger hamburger" id="js-hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -63,6 +74,7 @@
             </div>   
         </div>  
     </div>
+
     <div class="content">
         <div class="top_message">
             <h4>お知らせ</h4>
@@ -71,7 +83,7 @@
             各展示が己の個性を出しながら<br>
             夢の世界を形作ります
         </div>
-        <div class="c_1">
+        <div class="information">
             <h4>開催情報</h4>
             <p>
                 更新日 : 2023/10/04 <br>
@@ -88,7 +100,7 @@
                 - 後夜祭の演目については、今後掲載します。
             </p>
         </div>
-        <div class="c_2">
+        <div id="fm" class="floor_map">
             <h4>フロアマップ</h4>
             <p>
                 <b>1F</b> 
@@ -100,9 +112,12 @@
             </p>
         </div>
     </div>
+
     <footer class="footer">
 
     </footer>
+
+    <script src="./JS/main.js"></script>
     
 </body>
 </html>
