@@ -7,16 +7,16 @@ html{
 }
 
 body{
+    height: 100%;
     font-family: "Roboto", "Zen Kaku Gothic Antique", sans-serif;
     font-size: 16px;
     /* background-color: rgb(218, 160, 216); */
     /* background: linear-gradient(0deg, rgb(218, 160, 216), rgb(231, 87, 226)); */
     background-image: url(../img/IMG_8187_2.jpg);
     background-position: top left;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+    background-size: 100vh;
 }
 
 /* .backimg{
