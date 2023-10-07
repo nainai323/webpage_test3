@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Zen+Kaku+Gothic+Antique:wght@400;900&display=swap');
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: "Roboto", "Zen Kaku Gothic Antique", sans-serif;
     font-size: 16px;
@@ -12,6 +16,7 @@ body{
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
+    height: 100%;
 }
 
 /* .backimg{
