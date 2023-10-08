@@ -32,25 +32,27 @@ body{
 
 .top h1{ 
     color:rgba(20, 20, 20, .6); 
-    font-size: min(120px, 30vw);
+    font-size: min(120px, 25vw);
     -webkit-text-stroke: 1px #EEE;
 }
 
 .top h2{
-    -webkit-text-stroke: 0.45px #EEE;
+    -webkit-text-stroke: 0.5px #EEE;
     color:rgba(20, 20, 20, .9); 
+    /* color: rgba(245, 245, 245, .95); */
     /* font-size: min(60px, 12vw); */
     font-size: min(6vw,30px);
-    text-align: right;
+    /* text-align: right; */
+    margin-bottom: 10px;
 }
 
-.top .date h2{
-    -webkit-text-stroke: 0px #EEE;
-    color:rgba(245, 245, 245, 1); 
-    font-size: min(30px, 6vw);
+.top .top_date h2{
+    -webkit-text-stroke: 1px #333;
+    color:rgba(245, 245, 245, .95); 
+    font-size: min(60px, 12vw);
     display: block;
     padding: 5px;
-    background-color: rgba(20, 20, 20, .6);
+    /* background-color: rgba(20, 20, 20, .6); */
 }
 
 body h3{
@@ -258,10 +260,10 @@ ul,li {
 
 .logo{
     width: inherit;
-    display: flex;/*2つのコンテンツの中央揃え,divとimgを真ん中に持ってくる*/
+    /* display: flex;/*2つのコンテンツの中央揃え,divとimgを真ん中に持ってくる
     align-items: flex-start;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items:flex-end; */
 }
 
 .logo .fesname{
@@ -269,9 +271,10 @@ ul,li {
 }
 
 .logo .logo_word{
-    display: flex;
+    display: block;
+    /* display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: top; */
     /* margin-right: 2vw; */
 }
 
