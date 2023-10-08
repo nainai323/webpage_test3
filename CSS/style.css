@@ -9,7 +9,7 @@ html{
 body{
     height: 100%;
     font-family: "Roboto", "Zen Kaku Gothic Antique", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     /* background: transparent; */
     color: #333;
     background-color: rgb(245, 245, 245);
@@ -59,27 +59,23 @@ body h3{
 
 body h4{
     font-size: 24px;
-    /*margin-top: 14px;*/
-    margin-bottom: 14px;
+    /*margin-top: 16px;*/
+    margin-bottom: 16px;
     display: flex;
+    width: 100%;
+    color: #737;
+    font-weight: bolder;
     /* justify-content: center;  */
-    border-bottom: 1px solid #333;
-}
-
-body h5{
-    font-size: 18px;
-}
-
-h6{
-    font-size: 30px;
-    margin-bottom: 14px;
-    line-height: 1.2em;
-    
+    /* border-bottom: 1px solid #333; */
 }
 
 body h6{
+    font-size: 18px;
+}
+
+body h5{
     font-size: 30px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     line-height: 1.2em;
 
 }
@@ -295,8 +291,8 @@ ul,li {
 
 .top_message ul li{
     display: block;
-    padding: 1em 5%;
-    margin-bottom: 14px;
+    padding: 5px 5%;
+    margin-bottom: 16px;
     text-align: left;
     border: 0.1px solid #333;
     min-width: 30%; 
@@ -305,21 +301,21 @@ ul,li {
     border-radius: 10px;
     line-height: 1.5em;
 }
+
 .top_message ul li a{
-    /* text-decoration: underline; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.blinka{
-    animation:blinkAnimeb 3s ease-in-out infinite;
+.top_message ul li a .spanimg{
+    display: block;
+    width: 32px;
+    animation:Anime_a 3.14s infinite;
 }
-@keyframes blinkAnimeb{
-    0%{ text-decoration-color : #333  }
-    0%{ color : #333  }
-    50%{ color : #336  }
-    50%{ text-decoration-color : #336  }
+.top_message ul li a .spanmes{
+    display: block;
+    width: calc(100% - 32px);
 }
-
-
 
 .top_message ul li:last-child{
     margin-bottom: 0px;
@@ -333,12 +329,6 @@ ul,li {
     line-height: 2em;
 }
 
-.content .top_message{
-    padding: min(10%,70px);
-    box-shadow: 4px 4px 12px 4px;
-
-}
-
 .content div{
     padding: min(10%,70px);
     border-bottom: 1px solid #333;
@@ -348,9 +338,37 @@ ul,li {
     box-shadow: 4px 4px 12px 4px;
 }
 
+.content .top_message{
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    padding: min(10%,70px);
+    background-color: rgba(245, 245, 245, 0.93);
+    border-radius: 0;
+    box-shadow: none;
+
+}
+.anime{
+    display: inline-block;
+    animation:Animeb 2s infinite;
+    width: 300px;
+}
+@keyframes Animeb{
+    0%{ transform: translateX(0%);  }
+    33%{ transform: translateX(5%); }
+    66%{ transform: translateX(0%); }
+}
+
+@keyframes Animea{
+    0%{ transform: translateY(0%);  }
+    33%{ transform: translateY(-10%); }
+    66%{ transform: translateY(0%); }
+}
+
 .content img{
     width: 100%;
+    
 }
+
 .content .date{
     padding: 0;
     box-shadow: none;
