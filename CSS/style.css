@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&family=Zen+Kaku+Gothic+Antique:wght@400;900&display=swap');
 
+
+/* basic----------------------------------------- */
 html{
     height: 100%;
 }
@@ -332,7 +334,7 @@ ul,li {
 .content div{
     padding: min(10%,70px);
     border-bottom: 1px solid #333;
-    background-color: rgba(245, 245, 245,0.9);
+    background-color: rgba(245, 245, 245,0.93);
     margin: 50px 0;
     border-radius: 20px;
     box-shadow: 4px 4px 12px 4px;
