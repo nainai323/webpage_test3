@@ -347,22 +347,6 @@ ul,li {
     box-shadow: none;
 
 }
-.anime{
-    display: inline-block;
-    animation:Animeb 2s infinite;
-    width: 300px;
-}
-@keyframes Animeb{
-    0%{ transform: translateX(0%);  }
-    33%{ transform: translateX(5%); }
-    66%{ transform: translateX(0%); }
-}
-
-@keyframes Animea{
-    0%{ transform: translateY(0%);  }
-    33%{ transform: translateY(-10%); }
-    66%{ transform: translateY(0%); }
-}
 
 .content img{
     width: 100%;
@@ -378,10 +362,28 @@ ul,li {
     border-bottom: none;
     display: flex;
     justify-content: space-between;
+    /* animation:Anime_c 7s infinite; */
 }
 
 .content span{
     width: 50%;
+}
+
+.anime{
+    display: inline-block;
+    animation:Animeb 2s infinite;
+    width: 300px;
+}
+@keyframes Animeb{
+    0%{ transform: translateX(0%);  }
+    33%{ transform: translateX(5%); }
+    66%{ transform: translateX(0%); }
+}
+
+@keyframes Anime_c{
+    0%{ transform: translateY(0%);  }
+    8%{ transform: translateY(-3%); }
+    16%{ transform: translateY(0%); }
 }
 
 /*footer-----------------------------------------*/
