@@ -72,6 +72,7 @@ body h4{
 }
 
 body h6{
+    font-weight: 900;
     font-size: 18px;
 }
 
@@ -310,11 +311,13 @@ ul,li {
     justify-content: space-between;
     align-items: center;
 }
+
 .top_message ul li a .spanimg{
     display: block;
     width: 32px;
     animation:Anime_a 3.14s infinite;
 }
+
 .top_message ul li a .spanmes{
     display: block;
     width: calc(100% - 32px);
@@ -335,7 +338,7 @@ ul,li {
 .content div{
     padding: min(10%,70px);
     border-bottom: 1px solid #333;
-    background-color: rgba(245, 245, 245,0.9);
+    background-color: rgba(245, 245, 245, 0.9);
     margin: 50px 0;
     border-radius: 20px;
     box-shadow: 4px 4px 12px 4px;
@@ -348,12 +351,10 @@ ul,li {
     background-color: rgba(245, 245, 245, 0.93);
     border-radius: 0;
     box-shadow: none;
-
 }
 
 .content img{
     width: 100%;
-    
 }
 
 .content .date{
